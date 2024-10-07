@@ -26,3 +26,9 @@ let expensesPerMonth = 55 * 30;
 let monthlySaving = 6000 - expensesPerMonth;
 let witingTime = 66000 / monthlySaving;
 console.log("Witing time:", witingTime);
+
+// Evan or not
+let num = 348293;
+let even = num % 2;
+let evenOrNot = even == 0 ? "Even" : "not Even";
+console.log(evenOrNot);
