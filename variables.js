@@ -32,3 +32,28 @@ let num = 348293;
 let even = num % 2;
 let evenOrNot = even == 0 ? "Even" : "not Even";
 console.log(evenOrNot);
+
+// bmi = wight (kg) / (height (m) **2 )
+//18.5> = underwight
+//18.5<&&<24.9 = normal
+//24.9< = overwight
+
+let wight = 50;
+let height = 1.83;
+
+let bmi = wight / height ** 2;
+
+let underWight = "underwight";
+let normal = "normal";
+let overWight = "overwight";
+
+let bodyStatus =
+  bmi < 18.5
+    ? underWight
+    : bmi > 18.5 && bmi < 24.9
+    ? normal
+    : 25 < bmi
+    ? overWight
+    : "";
+
+console.log(bodyStatus);
