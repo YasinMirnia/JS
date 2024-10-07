@@ -84,3 +84,18 @@ let penalty =
     ? "Good driver"
     : "";
 console.log(penalty);
+
+//Update for specific users
+// location = USA / Canada / Switzerland
+// Battry charge = 15% - 80%
+let loc = "Iran";
+let battry = 70;
+
+let update =
+  (loc === "usa" || loc === "canada" || loc === "switzerland") &&
+  battry >= 15 &&
+  battry <= 80
+    ? "It's time for update"
+    : "update unavalibale";
+
+console.log(update);
