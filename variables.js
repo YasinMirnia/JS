@@ -30,7 +30,7 @@ console.log("Witing time:", witingTime);
 // Evan or not
 let num = 348293;
 let even = num % 2;
-let evenOrNot = even == 0 ? "Even" : "not Even";
+let evenOrNot = even === 0 ? "Even" : "not Even";
 console.log(evenOrNot);
 
 // bmi = wight (kg) / (height (m) **2 )
@@ -57,3 +57,30 @@ let bodyStatus =
     : "";
 
 console.log(bodyStatus);
+
+// Speed limit camera
+// distance = 5km
+// time = 10 minute
+// speed ?
+
+//speed limit night = 60 km/h
+//speed limit day = 80 km/h
+
+let minuteToHour = 10 / 60;
+
+let speed = 5 / minuteToHour;
+console.log("speed:", speed);
+
+let time = "day";
+
+let penalty =
+  speed < 60
+    ? "Good driver"
+    : speed > 60 && time === "night"
+    ? "Overspeed"
+    : speed > 80 && time === "day"
+    ? "Overspeed"
+    : speed < 80 && time === "day"
+    ? "Good driver"
+    : "";
+console.log(penalty);
